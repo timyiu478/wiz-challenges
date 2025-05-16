@@ -6,10 +6,11 @@ This repository contains various challenges and resources related to Kubernetes,
 
 ## Notes
 
-| Title                             | Description                                 | Tags                   | Link                                                        |
-|------------------------------------|---------------------------------------------|------------------------|-------------------------------------------------------------|
-| EKS Cluster Game - Registry Hunt   | imagePullSecret is not actually a secret    | Container-Registry     | [wiz-challenges](https://github.com/timyiu478/wiz-challenges) |
-| EKS Cluster Game - Secret Seek     | list all the secrets in the k8s cluster     | Kubernetes, Secret     | [wiz-challenges](https://github.com/timyiu478/wiz-challenges) |
+| Title                             | Description                                 | Tags                   |
+|------------------------------------|---------------------------------------------|------------------------|
+| [EKS Cluster Game - Registry Hunt](notes/EKS%20Cluster%20Game%20-%20Registry%20Hunt.md)   | imagePullSecret is not actually a secret    | Kubernetes, Container-Registry     | 
+| [EKS Cluster Game - Secret Seeker](notes/EKS%20Cluster%20Game%20-%20Secret%20Seeker.md)     | list all the secrets in the k8s cluster     | Kubernetes, Secret     |
+
 
 ## Resources
 
