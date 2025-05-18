@@ -3,7 +3,7 @@ tags:
   - Kubernetes
   - AWSInstanceMetadataAPI
 title: EKS Cluster Game - Pod Break
-description: 
+description: From node to k8s API
 reference: https://eksclustergames.com/challenge/4
 ---
 
