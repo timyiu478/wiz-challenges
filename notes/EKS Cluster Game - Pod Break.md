@@ -217,4 +217,6 @@ items:
 kind: List
 metadata:
   resourceVersion: ""
+root@wiz-eks-challenge:~# echo d2l6X2Vrc19jaGFsbGVuZ2V7b25seV9hX3JlYWxfcHJvX2Nhbl9uYXZpZ2F0ZV9JTURTX3RvX0VLU19jb25ncmF0c30= | base64 -d 
+wiz_eks_challenge{only_a_real_pro_can_navigate_IMDS_to_EKS_congrats}root@wiz-eks-challenge:~# 
 ```
