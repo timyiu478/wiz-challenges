@@ -1,8 +1,9 @@
 ---
 tags:
   - Kubernetes
+  - OIDC
 title: EKS Cluster Game - Container Secrets Infrastructure
-description: 
+description: Move from the EKS to the AWS account
 reference: https://eksclustergames.com/challenge/5
 ---
 ## Challenges
