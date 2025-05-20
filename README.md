@@ -20,3 +20,4 @@ This repository contains various challenges and resources related to Kubernetes,
 - https://promptairlines.com/
 - https://bigiamchallenge.com/challenge/1
 - https://eksclustergames.com/
+- https://k8slanparty.com/
