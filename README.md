@@ -16,8 +16,20 @@ This repository contains various challenges and resources related to Kubernetes,
 
 ## Resources
 
+### EKS Cluster Game
+
+> The challenge consists of five different scenarios, each one focusing on a possible Amazon EKS issue — and we’ve already directly observed some of them in various research engagements. Participants will play as the attacker, learn about these misconfigurations and security issues, and then exploit them in a controlled environment.
+
+Link: https://eksclustergames.com/
+
+### Kubernetes Lan Party
+
+> A CTF designed to challenge your Kubernetes hacking skills through a series of critical network vulnerabilities and misconfigurations. Challenge yourself, boost your skills, and stay ahead in the cloud security game.
+
+Link: https://k8slanparty.com/
+
+### Others
+
 - https://www.cloudhuntinggames.com/
 - https://promptairlines.com/
 - https://bigiamchallenge.com/challenge/1
-- https://eksclustergames.com/
-- https://k8slanparty.com/
