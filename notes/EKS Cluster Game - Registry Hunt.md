@@ -1,6 +1,7 @@
 ---
 tags:
   - Container-Registry
+  - Kubernetes
 title: EKS Cluster Game - Registry Hunt
 description: imagePullSecret is not actually a secret
 reference: https://eksclustergames.com/challenge/2
@@ -17,7 +18,6 @@ For your convenience, the [crane](https://github.com/google/go-containerregistr
 ### 1. check the pod spec
 
 - the container image registry is `docker.io`.
-- the `kubernetes.io/psp: eks.privileged` seems imply the pod can access the worker node resource.
 
 ```
 root@wiz-eks-challenge:~# kubectl get pods -n challenge2 -o yaml
