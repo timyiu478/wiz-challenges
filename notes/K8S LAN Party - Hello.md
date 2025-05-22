@@ -4,9 +4,10 @@ tags:
   - Sidecar-Container
   - tcpdump
 title: K8S LAN Party - Hello
-description: TODO
+description: Capture secrets from sidecar container via packet sniffing
 reference: https://k8slanparty.com/challenge/2
 ---
+
 ## Challenge
 
 Sometimes, it seems we are the only ones around, but we should always be on guard against invisible [sidecars](https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/) reporting sensitive secrets.
