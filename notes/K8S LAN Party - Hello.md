@@ -2,7 +2,6 @@
 tags:
   - Kubernetes
   - Sidecar-Container
-  - Istio
   - tcpdump
 title: K8S LAN Party - Hello
 description: TODO
@@ -59,6 +58,7 @@ player@wiz-k8s-lan-party:~$ cat scan_report | grep 15151
 ### 4. check if any other processes in the same host sending something to the `reporting-service` by `tcpdump`
 
 Yes.
+
 ```
 03:26:05.757521 ns-33c1e9 Out IP 192.168.15.111.36450 > reporting-service.k8s-lan-party.svc.cluster.local.http: Flags [.], ack 206, win 501, options [nop,nop,TS val 4050682731 ecr 2793517166], length 0
 E..4..@...Y....o
