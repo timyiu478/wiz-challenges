@@ -12,7 +12,7 @@ reference: https://k8slanparty.com/challenge/2
 Sometimes, it seems we are the only ones around, but we should always be on guard against invisible [sidecars](https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/) reporting sensitive secrets.
 ## Solution
 
-![](attachments/capture_sidecar_container_data_from_the_network.png)
+![](/attachments/capture_sidecar_container_data_from_the_network.png)
 
 ### 1. discover other services
 
