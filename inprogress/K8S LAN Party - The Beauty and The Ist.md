@@ -80,3 +80,46 @@ Got `RBAC: access denied` as expected because of the above Istio authorization p
 root@wiz-k8s-lan-party:~# curl 10.100.224.159
 RBAC: access deniedroot@wiz-k8s-lan-party:~#
 ```
+
+### 5. found we can view the host network
+
+```
+root@wiz-k8s-lan-party:~# ip addr | head
+3584: host-415b7d@if3583: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether d6:f1:64:6c:83:a6 brd ff:ff:ff:ff:ff:ff link-netnsid 1788
+    inet 192.168.14.252/31 scope global host-415b7d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::d4f1:64ff:fe6c:83a6/64 scope link 
+       valid_lft forever preferred_lft forever
+3328: host-78f1cc@if3327: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:c2:c7:94:b2:f5 brd ff:ff:ff:ff:ff:ff link-netnsid 1660
+    inet 192.168.13.252/31 scope global host-78f1cc
+       valid_lft forever preferred_lft forever
+root@wiz-k8s-lan-party:~# ip link | head
+3584: host-415b7d@if3583: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether d6:f1:64:6c:83:a6 brd ff:ff:ff:ff:ff:ff link-netnsid 1788
+3328: host-78f1cc@if3327: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether fa:c2:c7:94:b2:f5 brd ff:ff:ff:ff:ff:ff link-netnsid 1660
+3072: host-e6e57a@if3071: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 86:54:45:ba:f6:e4 brd ff:ff:ff:ff:ff:ff link-netnsid 1532
+2816: host-09f082@if2815: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether b6:5f:ac:83:08:57 brd ff:ff:ff:ff:ff:ff link-netnsid 1404
+2560: host-900450@if2559: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 16:85:7d:18:e1:f0 brd ff:ff:ff:ff:ff:ff link-netnsid 1276
+```
+
+### 6. Try `tcpdump`
+
+Operation not permitted.
+
+```
+root@wiz-k8s-lan-party:~# tcpdump
+tcpdump: host-415b7d: You don't have permission to capture on that device
+(socket: Operation not permitted)
+root@wiz-k8s-lan-party:~# sudo tcpdump
+sudo: unable to resolve host wiz-k8s-lan-party: Name or service not known
+sudo: unable to send audit message: Operation not permitted
+tcpdump: host-415b7d: You don't have permission to capture on that device
+(socket: Operation not permitted)
+```
+

@@ -15,7 +15,7 @@ This repository contains various challenges and resources related to Kubernetes,
 | [EKS Cluster Game - Container Secrets Infrastructure](https://github.com/timyiu478/wiz-challenges/blob/main/notes/EKS%20Cluster%20Game%20-%20Container%20Secrets%20Infrastructure.md) | Move from the EKS to the AWS account                           | Kubernetes, OIDC                      |
 | [K8S LAN Party - DNSING with the stars](notes/K8S%20LAN%20Party%20-%20DNSING%20with%20the%20stars.md)                                                                                 | Service discovery using dns scan                               | Kubernetes, DNS, Service Discovery    |
 | [K8S LAN Party - Hello](notes/K8S%20LAN%20Party%20-%20Hello.md)                                                                                                                       | Capture secrets from sidecar container via packet sniffing     | Kubernetes, tcpdump                   |
-| [K8S LAN Party - Exposed File Share ](notes/K8S%20LAN%20Party%20-%Exposed%20File%20Share.md)                                                                                                                       | The problem of old-school network file shares in the cloud   | Kubernetes, EFS                   |
+| [K8S LAN Party - Exposed File Share ](notes/K8S%20LAN%20Party%20-%20Exposed%20File%20Share.md)                                                                                                                       | The problem of old-school network file shares in the cloud   | Kubernetes, EFS                   |
 
 
 ## Resources
