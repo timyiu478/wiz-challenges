@@ -172,7 +172,7 @@ root@wiz-k8s-lan-party:~# curl -vvv -X PUT 10.100.224.159
 * Connection #0 to host 10.100.224.159 left intact
 ```
 
-### 9. find the local IP of `istiod-protected-service` to bypass the envoy proxy by Istio Admin REST API
+### 9. find the local IP of `istiod-protected-service` upstream to bypass the envoy proxy by Istio Admin REST API
 
 IP is `192.168.47.181:80`
 
