@@ -174,7 +174,9 @@ root@wiz-k8s-lan-party:~# curl -vvv -X PUT 10.100.224.159
 
 ### 9. find the local IP of `istiod-protected-service` upstream to bypass the envoy proxy by Istio Admin REST API
 
-IP is `192.168.47.181:80`
+IP is `192.168.47.181:80`.
+
+> In Istio, an **upstream cluster** refers to a group of backend services that Envoy proxies route traffic to
 
 ```
 root@wiz-k8s-lan-party:~# curl http://localhost:15000/clusters | grep istio-protected    
