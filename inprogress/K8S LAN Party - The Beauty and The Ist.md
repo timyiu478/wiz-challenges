@@ -123,3 +123,51 @@ tcpdump: host-415b7d: You don't have permission to capture on that device
 (socket: Operation not permitted)
 ```
 
+### 7. run `netstat` 
+
+It seems we can call the istio xds service.
+
+```
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         STREAM     CONNECTED     2635625458 ./var/run/secrets/workload-spiffe-uds/socket
+unix  3      [ ]         STREAM     CONNECTED     2639217344 etc/istio/proxy/XDS
+unix  3      [ ]         STREAM     CONNECTED     2635624260 
+unix  3      [ ]         STREAM     CONNECTED     2639215287 
+```
+
+## 8. Try to send HTTP request with `PUT` method to pass the authorization policy
+
+```
+root@wiz-k8s-lan-party:~# curl -vvv -X PUT 10.100.224.159
+*   Trying 10.100.224.159:80...
+* Connected to 10.100.224.159 (10.100.224.159) port 80 (#0)
+> PUT / HTTP/1.1
+> Host: 10.100.224.159
+> User-Agent: curl/7.81.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 501 Not Implemented
+< server: envoy
+< date: Fri, 23 May 2025 17:56:41 GMT
+< content-type: text/html;charset=utf-8
+< content-length: 496
+< x-envoy-upstream-service-time: 2
+< 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Error response</title>
+    </head>
+    <body>
+        <h1>Error response</h1>
+        <p>Error code: 501</p>
+        <p>Message: Unsupported method ('PUT').</p>
+        <p>Error code explanation: HTTPStatus.NOT_IMPLEMENTED - Server does not support this operation.</p>
+    </body>
+</html>
+* Connection #0 to host 10.100.224.159 left intact
+```
