@@ -2,7 +2,7 @@
 
 ## About
 
-This repository contains various challenges and resources related to Kubernetes, cloud security, and container registries. Use these challenges to practice and improve cloud security skills.
+This repository contains write-ups for various cloud security challenges, including EKS Cluster Game, Kubernetes LAN Party, and the BIG IAM Challenge. The challenges are designed to learn about common misconfigurations and security issues in cloud environments, particularly in Kubernetes and AWS IAM.
 
 ## Notes
 
