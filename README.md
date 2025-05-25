@@ -37,8 +37,12 @@ Link: https://eksclustergames.com/
 
 Link: https://k8slanparty.com/
 
+### BIG IAM Challenge
+
+> This challenge is open to everyone - from beginners seeking to learn more about [IAM security](https://www.wiz.io/academy/iam-security) configurations to experienced professionals wanting to brush up on their skills. No special software, no complex set-ups - all you need is the AWS Command Line Interface (CLI), which is already integrated into the challenge's website. The challenge consists of 6 steps, with each one focusing on a common IAM configuration mistake in various AWS services. You will have the opportunity to identify and exploit these errors while applying your knowledge in real-world scenarios.
+
+Link: https://bigiamchallenge.com/challenge/
 ### Others
 
 - https://www.cloudhuntinggames.com/
 - https://promptairlines.com/
-- https://bigiamchallenge.com/challenge/1
