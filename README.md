@@ -18,6 +18,7 @@ This repository contains various challenges and resources related to Kubernetes,
 | [K8S LAN Party - Exposed File Share ](notes/K8S%20LAN%20Party%20-%20Exposed%20File%20Share.md)                                                                                        | The problem of old-school network file shares in the cloud       | Kubernetes, EFS                        |
 | [K8S LAN Party - The Beauty and The Ist](notes/K8S%20LAN%20Party%20-%20The%20Beauty%20and%20The%20Ist.md)                                                                             | Bypass Istio envoy sidecar for ignoring the authorization policy | Kubernetes, Istio                      |
 | [K8S LAN Party - Who will guard the guardians](notes/K8S%20LAN%20Party%20-%20Who%20will%20guard%20the%20guardians.md)                                                                 | Mistake from guardian                                            | Kubernetes, Kyverno, Admission Webhook |
+| [The BIG IAM Challenge - Buckets of Fun](notes/The%20BIG%20IAM%20Challenge%20-%20Buckets%20of%20Fun.md)                                                                               | Public buckets are risky                                         | IAM, S3                                |
 
 
 ## Resources
