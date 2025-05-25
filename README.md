@@ -20,7 +20,7 @@ This repository contains various challenges and resources related to Kubernetes,
 | [K8S LAN Party - Who will guard the guardians](notes/K8S%20LAN%20Party%20-%20Who%20will%20guard%20the%20guardians.md)                                                                 | Mistake from guardian                                            | Kubernetes, Kyverno, Admission Webhook |
 | [The BIG IAM Challenge - Buckets of Fun](notes/The%20BIG%20IAM%20Challenge%20-%20Buckets%20of%20Fun.md)                                                                               | Public buckets are risky                                         | IAM, S3                                |
 | [The BIG IAM Challenge - Google Analytics](notes/The%20BIG%20IAM%20Challenge%20-%20Google%20Analytics.md)                                                                             | Public queues are risky                                          | IAM, SQS                               |
-| [The BIG IAM Challenge - Enable Push Notifications](notes/The%20BIG%20IAM%20Challenge%20-%20Google%20Analytics.md)                                                                    | Public queues are risky                                          | IAM, SNS                               |
+| [The BIG IAM Challenge - Enable Push Notifications](notes/The%20BIG%20IAM%20Challenge%20-%20Google%20Analytics.md)                                                                    | Asterisks are risky                                              | IAM, SNS                               |
 
 
 ## Resources
