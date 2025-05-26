@@ -23,6 +23,7 @@ This repository contains write-ups for various cloud security challenges, includ
 | [The BIG IAM Challenge - Enable Push Notifications](notes/The%20BIG%20IAM%20Challenge%20-%20Google%20Analytics.md)                                                                    | Asterisks are risky                                                      | IAM, SNS                               |
 | [THE BIG IAM Challenge - Admin Only](notes/THE%20BIG%20IAM%20Challenge%20-%20Admin%20Only.md)                                                                                         | ForAllValues:StringLike may not be what you think                        | IAM, S3                                |
 | [The BIG IAM Challenge - Do I Know You](notes/The%20BIG%20IAM%20Challenge%20-%20Do%20I%20Know%20You.md)                                                                               | Be aware how identity pool generate AWS credentials for the guest access | IAM, Cognito                           |
+| [THE BIG IAM Challenge - One final push](notes/THE%20BIG%20IAM%20Challenge%20-%20One%20final%20push)                                                                                  | IAM is too open to OIDC                                                  | IAM, Cognito, OIDC                     |
 
 ## Resources
 
