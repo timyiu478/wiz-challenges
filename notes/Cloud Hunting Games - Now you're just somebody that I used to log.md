@@ -267,7 +267,7 @@ fi
 
 ### 3. understand the above bash script
 
-![cloud hunting games - ch5 - attack.png](attachments/cloud%20hunting%20games%20-%20ch5%20-%20attack.png)
+![cloud hunting games - ch5 - attack.png](/attachments/cloud%20hunting%20games%20-%20ch5%20-%20attack.png)
 
 #### spread ssh
 
