@@ -26,6 +26,7 @@ This repository contains write-ups for various cloud security challenges, includ
 | [THE BIG IAM Challenge - One final push](notes/THE%20BIG%20IAM%20Challenge%20-%20One%20final%20push)                                                                                  | IAM is too open to OIDC                                                  | IAM, Cognito, OIDC                     |
 | [Cloud Hunting Games - Ain't no data when she's gone](notes/Cloud%20Hunting%20Games%20-%20Ain't%20no%20data%20when%20she's%20gone.md)                                                 | Verify the attacker whether indeed obtained the secrets via logs         | S3, SQL                                |
 | [Cloud Huntnig Games - Follow, follow the trail](notes/Cloud%20Huntnig%20Games%20-%20Follow%20the%20trail.md)                                                                         | Use the role name and session name to find who assumes this role         | CloudTrail, SQL                        |
+| [Cloud Hunting Games - Deeper into the trail](notes/Cloud%20Hunting%20Games%20-%20Deeper%20into%20the%20trail.md)                                                                     | Dig deeper about compromised machine for executing malicious code        | CloudTrail, SQL                        |
 
 ## Resources
 
