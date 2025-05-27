@@ -2,8 +2,9 @@
 tags:
   - Bash
   - Self-Duplication
+  - Cron
 title: Cloud Hunting Games - Now you're just somebody that I used to log
-description: 
+description: Cloud version morris worm
 reference: https://www.cloudhuntinggames.com/challenge/5
 ---
 ## Challenge
