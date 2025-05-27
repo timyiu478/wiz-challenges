@@ -24,6 +24,7 @@ This repository contains write-ups for various cloud security challenges, includ
 | [THE BIG IAM Challenge - Admin Only](notes/THE%20BIG%20IAM%20Challenge%20-%20Admin%20Only.md)                                                                                         | ForAllValues:StringLike may not be what you think                        | IAM, S3                                |
 | [The BIG IAM Challenge - Do I Know You](notes/The%20BIG%20IAM%20Challenge%20-%20Do%20I%20Know%20You.md)                                                                               | Be aware how identity pool generate AWS credentials for the guest access | IAM, Cognito                           |
 | [THE BIG IAM Challenge - One final push](notes/THE%20BIG%20IAM%20Challenge%20-%20One%20final%20push)                                                                                  | IAM is too open to OIDC                                                  | IAM, Cognito, OIDC                     |
+| [Cloud Hunting Games - Ain't no data when she's gone](notes/Cloud%20Hunting%20Games%20-%20Ain't%20no%20data%20when%20she's%20gone.md)                                                 | Verify the attacker whether indeed obtained the secrets via logs         | S3, SQL                                |
 
 ## Resources
 
@@ -44,7 +45,13 @@ Link: https://k8slanparty.com/
 > This challenge is open to everyone - from beginners seeking to learn more about [IAM security](https://www.wiz.io/academy/iam-security) configurations to experienced professionals wanting to brush up on their skills. No special software, no complex set-ups - all you need is the AWS Command Line Interface (CLI), which is already integrated into the challenge's website. The challenge consists of 6 steps, with each one focusing on a common IAM configuration mistake in various AWS services. You will have the opportunity to identify and exploit these errors while applying your knowledge in real-world scenarios.
 
 Link: https://bigiamchallenge.com/challenge/
+
+### The Cloud Hunting Games
+
+> ExfilCola, a promising startup with a revolutionary soda formula that could break the duopoly of the cola giants, has received a data extortion email from a threat group known as "FizzShadows", claiming to have breached their systems. If the secret recipe is stolen, the future of the company is at immediate risk. As the chosen expert, you must prevent the formula from being exposedbefore it's too late.
+
+Link: https://www.cloudhuntinggames.com/
+
 ### Others
 
-- https://www.cloudhuntinggames.com/
 - https://promptairlines.com/
