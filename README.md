@@ -29,6 +29,8 @@ This repository contains write-ups for various cloud security challenges, includ
 | [Cloud Hunting Games - Deeper into the trail](notes/Cloud%20Hunting%20Games%20-%20Deeper%20into%20the%20trail.md)                                                                                         | Dig deeper about compromised machine for executing malicious code        | CloudTrail, SQL                        |
 | [Cloud Hunting Games - Aint no mountain high enough to keep me away from my logs](notes/Cloud%20Hunting%20Games%20-%20Aint%20no%20mountain%20high%20enough%20to%20keep%20me%20away%20from%20my%20logs.md) | Reveal the attacker ssh auth logs                                        | OverlayFS, EC2                         |
 | [Cloud Hunting Games - Now you're just somebody that I used to log](notes/Cloud%20Hunting%20Games%20-%20Now%20you're%20just%20somebody%20that%20I%20used%20to%20log.md)                                   | Cloud version morris worm                                                | Bash, Cron, Self-Duplicaiton           |
+| [AI Security Challenge - 1](notes/AI%20Security%20Challenge%20-%201.md)                                                                                                                                   | Overwrite LLM Pre-prompts                                                | AI, LLM                                |
+
 
 ## Resources
 
