@@ -30,7 +30,7 @@ Amazon Cognito Sync is an AWS service and client library that makes it possible 
 
 The cognito image is **a signed image on S3!**!
 
-![[wiz_iam_ch_5 1.mp4]]
+![](/attachments/wiz_iam_ch_5_1.mp4)
 
 Use browser developer tool to copy the elements:
 
